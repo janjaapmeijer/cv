@@ -1,0 +1,229 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvicons{awesome}
+\moderncvcolor{blue}
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{4cm}
+
+% Widen the quote section
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+	\originalrecomputecvlengths%
+	\setlength{\quotewidth}{0.85\textwidth}}
+
+% Reformat cvcomputer entry
+%\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+
+% Format references with icons
+\newcommand{\cvreference}[9]{%
+	\textbf{#1}\newline% Name
+	\ifthenelse{\equal{#2}{}}{}{#2\newline}% Function
+	\ifthenelse{\equal{#3}{}}{}{#3\newline}% Institute
+	\ifthenelse{\equal{#4}{}}{}{\addresssymbol~#4\newline}%
+	\ifthenelse{\equal{#5}{}}{}{#5\newline}%
+	\ifthenelse{\equal{#6}{}}{}{#6\newline}%
+	\ifthenelse{\equal{#7}{}}{}{\emailsymbol~\texttt{\href{mailto:#7}{\nolinkurl{#7}}}\newline}%
+	\ifthenelse{\equal{#8}{}}{}{\phonesymbol~#8\newline}
+	\ifthenelse{\equal{#9}{}}{}{\mobilephonesymbol~#9}}
+
+% single colum cvcompuer
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+% personal data
+\name{Jan Jaap}{Meijer}
+\title{Curriculum Vitae}
+%\address{Prinses Beatrixstraat 19}{7271 GG Borculo}{the Netherlands}
+\phone[mobile]{\href{tel:0031641709565}{+31 6 417 09 565}}
+\email{janjaapmeijer@gmail.com}
+\social[linkedin]{janjaapmeijer}
+\social[github]{janjaapmeijer}
+\extrainfo{\skypesocialsymbol \href{skype:meijerjanjaap?call}{meijerjanjaap}} %
+\photo[64pt][0.4pt]{pictures/photo}
+\quote{\raggedright{Een flexibele en gemotiveerde onderzoeker zoekende naar een positie gerelateerd aan de fysisische oceanografie, die gebruik maakt van zijn communicatieve en rekenkundige vaardigheden opgedaan tijdens zijn studie alsmede werkervaring in (buitenlandse) bedrijven en onderzoeksinstituten.
+Tijdens mijn studies combineerde ik studeren met stages, bijbanen, reizen en andere verbintenissen, wat laat zien dat ik gedreven, georganiseerd en in staat ben om samen te werken met anderen. Ik heb een duidelijke, open blik met een praktisch aanpak voor het oplossen van problemen die gedreven wordt door innovatie op sociaal en milieu vlak ten behoeve van duurzaamheid. Samengevat zou ik mijzelf beschrijven als een enthousiast, hardwerkend, leergierig en betrouwbaar persoon met een passie voor golven en zee\"{e}n.}}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL DATA
+%----------------------------------------------------------------------------------------
+
+\section{Persoonlijke gegevens}
+\cvitem{Geboortedatum}{3 maart 1986}
+\cvitem{Geboorteplaats}{Winterswijk}
+\cvitem{Nationaliteit}{Nederlands}
+%\cvitem{Marital status}{Single}
+%\cvitem{Sex}{Male}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Opleidingen}
+\cventry{2011 -- 2014}{Master of Science in Natuurkunde en Meteorologie \& Fysische Oceanografie}{\textsc{Universiteit Utrecht}}{}{}{Keuzevakken: Geophysical Fluid Dynamics, Ocean Waves, Physics of Coastal Systems en Ice and Climate} %\textit{GPA -- 8.0 % Arguments not required can be left empty
+
+\cventry{2012}{Gaststudent bij de afdeling Fysische Oceanografie}{\textsc{Koninklijk Nederlands Instituut voor Onderzoek der Zee (NIOZ)}}{Texel}{}{Keuzevak: multidisciplinaire oceanografische cursus (Zeegaand onderzoek)\\Project: Analyseren en interpreteren van observaties, "Temperature profiles along the Southern
+	Boundary of the North Sea - measurements by seals".}
+
+\cventry{2012}{Gaststudent bij de afdeling Coastal Engineering}{\textsc{Technische Universiteit Delft}}{}{}{Keuzevakken: Coastal Dynamics, Coastal Zone Management en Waterpower Engineering}
+
+\cventry{2011}{Zomerschool in Physics of the Climate System}{\textsc{Universiteit Utrecht}}{}{}{}
+
+
+\cventry{2004 -- 2011}{Bachelor of Engineering in Luchtvaarttechnologie}{\textsc{Inholland Delft}}{}{}{Minor: Lichtgewicht construeren}
+
+\section{Master Thesis}
+\cvitem{Titel}{\emph{Modelling the formation of coral cays on platform reefs.}}
+\cvitem{Begeleiders}{Prof. dr. H.E. de Swart, dr. M. van der Vegt and dr. ir. A. van Dongeren}
+\cvitem{Beschrijving}{Een model studie om te onderzoeken wat de invloed is van golfdissipatie, golfgegenereerde stromingen en sediment transport op de formatie en positie van koraaleilanden op platformriffen.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Ervaringen}
+\subsection{Onderzoekservaring}
+\cventry{2015 -- 2016}{Research Associate}{\textsc{Stockholm Environment Institute (SEI)}}{Stockholm, Zweden}{\footnotesize{\url{http://www.sei-international.org}}}{Een casusstudie waarin een set benodigdheden voor het bepalen van kustrisico's tijdens extreme storm gebeurtenissen, ontwikkeld in het \href{http://www.risckit.eu}{RISC-KIT} project, toegepast zijn langs de kust van de gemeente van Kristianstad in Zweden.}
+
+\cventry{2013 -- 2014}{Afstudeerder op de afdeling Sediment transport and Morphologie}{\textsc{Deltares}}{Delft}{\footnotesize{\url{http://www.deltares.nl}}}{Onderzoeksstudie naar de formatie van koraaleilanden op platform riffen.}
+
+\subsection{Zeevaartervaring}
+\cventry{2015}{Onderzoeker}{\textsc{NIOZ - RV Pelagia}}{Rainbow hydrothermisch veld op de Mid-Atlantische Rug nabij de Azoren}{6 - 14 April 2015}{Assisteren in het terugkrijgen diepzee verankeringen (moorings), bedienen van de CTD Rosette tijdens "yo-yo" en "tow-yow" metingen en een eerste poging in het analyseren van de mooring data sets.}
+
+\cventry{2008 -- heden}{Deksman}{\textsc{Rederij Halfland}}{Rotterdam}{\footnotesize{\url{http://www.halfland.nl}}}{Assisteren van de stuurman en kapitein op twee- en driemaster zeilschepen.}
+
+\subsection{Onderwijservaring}
+\cventry{2015 -- heden}{(Assistent) Docent Wiskunde en Natuurkunde}{\textsc{Inwijs}}{Leiden}{\footnotesize{\url{http://www.inwijs.nl/}}}{Les geven in Wiskunde en Natuurkunde aan bovenbouw leerlingen van het VMBO, HAVO en VWO}
+
+\subsection{Technische ervaring}
+\cventry{2011}{Afstudeerder op de afdeling Research \& Development}{\textsc{CTC GmbH} dochteronderneming van \textsc{Airbus Deutschland GmbH}}{Stade, Duitsland}{\footnotesize{\url{http://www.ctc-gmbh.com}}}{Onderzoek en ontwikkelen van processen voor het "Out of Autoclave" nabewerken van de Airbus A350-1000 Romp, voornamelijk gemaakt van koolstofvezelversterkte kunststoffen.}
+
+\cventry{2003 -- 2011}{Buitendienst monteur}{\textsc{Nawi BV}}{Borculo}{\footnotesize{\url{http://www.nawi.nl}}}{Monteren en assembleren van stalen installaties in de voedingindustrie.}
+
+\cventry{2010}{Optimisation Engineer}{\textsc{Spears \& Stijnman}}{Den Haag}{}{Analyseren en optimaliseren van mobiele telecom netwerken.}
+
+\cventry{2007 -- 2008}{Stagiair op de afdeling design/ stress en project management}{\textsc{FACC AG}}{Ried im Innkreis, Oostenrijk}{\footnotesize{\url{http://www.facc.at}}}{Ontwerpen en analyseren van composieten componenten voor civiele vliegtuigen. Voornamelijk werkend aan het Boeing 787 Spoiler project.}
+
+\cventry{2006}{Monteur}{\textsc{Het Klassieker Centrum}}{Delft}{\footnotesize{\url{http://www.klassiekercentrum.nl}}}{Repareren/ restaureren van klassieke auto's.\\ \\}
+%----------------------------------------------------------------------------------------
+%	CONFERENCE PRESENTATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Conferentie presentaties}
+\cventry{2016}{From storm hazards at the coast, to impacts on the hinterland - \href{http://www.risckit.eu}{RISC-KIT} project}{Climate Change Adaptation in the Coastal Zone conferentie georganiseerd door de \textsc{F\"{o}reningen Vatten} (Zweedse Organisatie voor Water) in samenwerking met de \textsc{Lund Universiteit} en de \textsc{World Maritime University}}{Malm\"{o}, Zweden}{}{}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Talen}
+\cvlanguage{Nederlands}{moedertaal}{}
+\cvlanguage{Engels}{vloeiend}{in spraak en geschrift}
+\cvlanguage{Duits}{vloeiend}{in spraak en redelijk in geschrift}
+\cvlanguage{Frans}{basis}{in spraak en geschrift}
+\cvlanguage{Portugees}{basis}{in spraak}
+\cvlanguage{Spaans}{basis}{in spraak}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS/ ABILITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Vaardigheden}
+
+\subsection{Communicatie}
+\cvitem{Lezen}{Bekwaam in het lezen van technische handleidingen en wetenschappelijke artikelen}
+\cvitem{Schrijven}{Bekwaam in het schrijven van technische en wetenschappelijke verslagen}
+\cvitem{Presenteren}{Zelfverzekerd in spreken in het openbaar en werkvloer discussies}
+
+\subsection{Information technology}
+\cvcomputer{Besturingssystemen}{Windows, Mac OSX, Linux Mint}
+\cvcomputer{Programmeer talen}{Python, Fortran, HTML}
+\cvcomputer{Rapporteer software}{Microsof Office suite, LaTeX}
+\cvcomputer{Engineering design en data analyse paketten}{CATIA, Patran/ Nastran, Matlab/ Simulink}
+\cvcomputer{Modelleer software}{XBeach, Delft3D, LISFLOOD}
+\cvcomputer{Geografisch informatiesysteem}{QGIS}
+
+\subsection{Certificaten/ Bewijzen}
+\cvitemwithcomment{Vervaldatum: \newline 3 maart 2056}{Vaarbewijs 2}{Rivieren, kanalen en meren (incl. de Eems Dollard, de Waddenzee, het IJsselmeer, Markermeer, IJmeer en Ooster-/ Westerschelde)}
+\cvitemwithcomment{26 maart 2020}{Survival at Sea certificaat}{}
+\cvitemwithcomment{3 maart 2017}{Medische keuring zeevaart}{wereldwijd}
+\cvitemwithcomment{30 januari 2019}{Motor- en autorijbewijs}{A and B}
+
+%----------------------------------------------------------------------------------------
+%	MEMBERSHIPS
+%----------------------------------------------------------------------------------------
+
+%\section{Memberships}
+%\cvitem{S.W.V. Plankenkoorts}{Member of students windsurf club}
+%\cvlistitem{Member of activities committee}
+%\cvlistitem{Organisation member of the band contest "MadFest" and the event "IJsselmeer Crossing"}
+%\cvitem{Scouting Cycloongroup Borculo}{Formerly member}
+%\cvlistitem{Giving guidance to scouts of 10 to 15 years old.}
+%\cvlistitem{Chair of our own Scout group.}
+%\cvitem{K.S.V. Sanctus Virgilius}{Formerly member of students' union}
+
+
+%\cventry{2007 -- Present}{\normalfont{Member of students windsurf club}}{S.W.V. Plankenkoorts}{Delft, the Netherlands}{}{\begin{itemize}
+%\item Member of activities committee
+%\item Organisation member of the band contest "MadFest" and the event "IJsselmeer Crossing"\end{itemize}}
+%\cventry{2006 -- 2010}{\normalfont{Formerly member of students' union}}{K.S.V. Sanctus Virgilius}{Delft, the Netherlands}{}{}
+%\cventry{1994 -- 2002}{\normalfont{Formerly member of Scouting}}{Cycloongroep Borculo}{Borculo, the Netherlands}{}{\begin{itemize}
+%\item Giving guidance to scouts of 10 to 15 years old.
+%\item President of our own Scout group.
+%\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Andere interesses}
+\cvlistdoubleitem{Surfen}{Motorijden}
+\cvlistdoubleitem{Zeilen}{Restaureren van een klassieke Engelse sportauto}
+\cvlistitem{Reizen (Zuid-Amerika (2014), Panama, Costa Rica, Brazili\"e, Indonesi\"e, Fuerteventura en Europa)}
+%\cvlistdoubleitem{Snowboarding}{Capoeira}
+%\cvlistdoubleitem{Speed skating}{Scuba diving}
+
+
+\section{Referenties}
+
+%\subsection{\normalfont{Beschikbaar op aanvraag}}
+
+\begin{cvcolumns}
+%	\cvcolumn{}{%
+%		\cvreference{Prof. dr. H.E. de Swart}{Professor in coastal and shelf sea dynamics}{IMAU - Institute for Marine and \\Atmospheric research Utrecht}{\textbf{Postal address}}{P.O. Box 80.005}{3508 TA Utrecht, the Netherlands}{h.e.deswart@uu.nl}{+31 (0)30 253 3275}{}\\
+%		\cvreference{Drs. A. Degeling}{Owner and director}{Rederij Halfland}{Leuvehaven 68}{3011 EA Rotterdam, the Netherlands}{}{rederij@halfland.nl}{+31 (0)10 414 6728}{+31 (0)6 227 87 207}
+%	}
+	\cvcolumn{}{%
+		\cvreference{Dr. K. Barquet}{Research Fellow\\}{Stockholm Environment Institute}{}{}{}{karina.barquet@sei-international.org}{}{\href{tel:0046703885690}{+46 (0)70 388 5690}}\\
+%		\cvreference{Drs. A. Degeling}{Owner and director}{Rederij Halfland}{Leuvehaven 68}{3011 EA Rotterdam, the Netherlands}{}{rederij@halfland.nl}{+31 (0)10 414 6728}{+31 (0)6 227 87 207}
+	}
+	\cvcolumn{}{%
+		\cvreference{Dr. ir. A. van Dongeren}{Specialist in nearshore wave dynamics and morphology}{Deltares}{}{}{}{ap.vandongeren@deltares.nl}{}{\href{tel:0031614702455}{+31 (0)6 147 02 455}}\\
+	}
+%		\cvreference{Dr. ir. A. van Dongeren}{Specialist in nearshore wave dynamics and morphology}{Deltares - institute for applied research}{Rotterdamseweg 185}{2629 HD Delft, the Netherlands}{}{ap.vandongeren@deltares.nl}{}{+31 (0)6 147 02 455}
+\end{cvcolumns}
+
+\end{document}
