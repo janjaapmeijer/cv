@@ -10,6 +10,8 @@ Most commands are defined in such a way that arguments are optional.
 Until a decent manual is written, one can always look in the "examples"
 directory for some examples. Documents can be compiled into dvi, ps or pdf.
 
+Move plainyrrev.bst to /usr/share/texlive/texmf-dist/bibtex/bst/beebe/.
+'''sudo mv plainyrrev.bst /usr/share/texlive/texmf-dist/bibtex/bst/beebe/'''
 
 Author: Xavier Danaux <xdanaux@gmail.com><br/>
 Licence: The LaTeX Project Public Li­cense, version 1.3c<br/>
