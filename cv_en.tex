@@ -40,39 +40,6 @@
 	\ifthenelse{\equal{#8}{}}{}{\phonesymbol~#8\newline}
 	\ifthenelse{\equal{#9}{}}{}{\mobilephonesymbol~#9}}
 
-%\newcommand*{\skypesocialsymbol} {%
-%	\protect\raisebox{-0.085em}{%
-%		\protect\begin{tikzpicture}[y=0.08em,x=0.08em,xscale=0.022,yscale=-0.022, inner sep=0pt, outer sep=0pt]
-%		\protect\path[fill=color2,even odd rule] (487.6550,288.9690) .. controls (489.0610,278.5690) and
-%		(489.8700,267.9960) .. (489.8700,257.2330) .. controls (489.8700,128.0770) and
-%		(384.5990,23.3610) .. (254.7670,23.3610) .. controls (241.8630,23.3610) and
-%		(229.2120,24.4210) .. (216.9010,26.4410) .. controls (194.8280,12.0570) and
-%		(168.5590,3.6740) .. (140.2880,3.6740) .. controls (62.7660,3.6740) and
-%		(0.0000,66.4820) .. (0.0000,143.9800) .. controls (0.0000,172.1780) and
-%		(8.2990,198.3740) .. (22.5900,220.3690) .. controls (20.6650,232.3860) and
-%		(19.6810,244.6920) .. (19.6810,257.2290) .. controls (19.6810,386.4050) and
-%		(124.8980,491.1100) .. (254.7660,491.1100) .. controls (269.4230,491.1100) and
-%		(283.6930,489.6840) .. (297.5620,487.1780) .. controls (319.1120,500.5470) and
-%		(344.4960,508.3260) .. (371.7080,508.3260) .. controls (449.2100,508.3260) and
-%		(512.0010,445.5020) .. (512.0010,368.0120) .. controls (511.9980,338.7190) and
-%		(503.0410,311.4840) .. (487.6550,288.9690) -- cycle(276.7400,429.5960) ..
-%		controls (202.0340,433.4870) and (167.0750,416.9590) .. (135.0500,386.9050) ..
-%		controls (99.2850,353.3370) and (113.6520,315.0500) .. (142.7900,313.1040) ..
-%		controls (171.9120,311.1590) and (189.3980,346.1160) .. (204.9410,355.8400) ..
-%		controls (220.4650,365.5280) and (279.5340,387.6000) .. (310.7350,351.9320) ..
-%		controls (344.7100,313.1040) and (288.1410,293.0120) .. (246.6760,286.9300) ..
-%		controls (187.4730,278.1640) and (112.7260,246.1370) .. (118.5410,183.0230) ..
-%		controls (124.3580,119.9490) and (172.1230,87.6090) .. (222.3910,83.0470) ..
-%		controls (286.4680,77.2300) and (328.1820,92.7540) .. (361.1760,120.9070) ..
-%		controls (399.3270,153.4360) and (378.6840,189.8010) .. (354.3770,192.7270) ..
-%		controls (330.1660,195.6360) and (302.9730,139.2230) .. (249.5860,138.3750) ..
-%		controls (194.5590,137.5110) and (157.3690,195.6360) .. (225.3000,212.1590) ..
-%		controls (293.2660,228.6640) and (366.0500,235.4450) .. (392.2610,297.5760) ..
-%		controls (418.4900,359.7130) and (351.5070,425.7010) .. (276.7400,429.5960) --
-%		cycle;
-%		\protect\end{tikzpicture}}%
-%	}
-
 % single colum cvcomputer
 \renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
 
@@ -84,16 +51,17 @@
 % personal data
 \name{Jan Jaap}{Meijer}
 \title{Curriculum Vitae}
-\address{135 Waterworks Rd}{Dynnyrne TAS 7005}{Australia}
+% \address{135 Waterworks Rd}{Dynnyrne TAS 7005}{Australia}
 %\address{Prinses Beatrixstraat 19}{7271 GG Borculo}{the Netherlands}
 \phone[mobile]{\href{tel:0061435503003}{+61 435 503 003}}
 %\phone[mobile]{\href{tel:0031641709565}{+31 6 417 09 565}}
 \email{janjaapmeijer@gmail.com}
+\homepage{janjaapmeijer.github.io/atsea}
 \social[linkedin]{janjaapmeijer}
 \social[github]{janjaapmeijer}
 \extrainfo{\skypesocialsymbol \href{skype:meijerjanjaap?call}{meijerjanjaap}} %
 \photo[64pt][0.4pt]{pictures/photo}
-\quote{\raggedright{I am an enthusiastic and motivated observational oceanographer who is deeply connected to the ocean not only via my degree in Meteorology, Physical Oceanography and Climate, but also via my personal interests in surfing and sailing. During my degree I successfully combined my studies with internships and part time jobs, journeys and other commitments showing myself to be self-motivated, organised and being able to work with others. I have a clear, open mind and use my communication and numeracy skills to solve societal and environmental problems for a sustainable future.}}
+\quote{\raggedright{I am an enthusiastic and motivated observational oceanographer who is deeply connected to the ocean not only via my degree Meteorology, Physical Oceanography and Climate, but also via my personal interests in surfing and sailing. During my degree I successfully combined my studies with internships and part time jobs, journeys and other commitments showing myself to be self-motivated, organised and able to work productively with others. I have a clear, open mind and use my communication and numeracy skills to solve societal and environmental problems for a sustainable future.}}
 
 % bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
@@ -109,17 +77,16 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL DATA
 %----------------------------------------------------------------------------------------
 
-\section{Personal Data}
-\cvitem{Date of birth}{3 March 1986}
-\cvitem{Place of birth}{Winterswijk, the Netherlands}
-\cvitem{Nationality}{Dutch}
+% \section{Personal Data}
+% \cvitem{Date of birth}{3 March 1986}
+% \cvitem{Place of birth}{Winterswijk, the Netherlands}
+% \cvitem{Nationality}{Dutch}
 %\cvitem{Marital status}{Single}
 %\cvitem{Sex}{Male}
 
@@ -128,31 +95,25 @@
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-\cventry{2017 -- Present}{PhD candidate in Quantitative Marine Science}{\textsc{University of Tasmania}}{Hobart, Australia}{}{}
+\cventry{2017 -- Present}{PhD candidate in Quantitative Marine Science}{\textsc{University of Tasmania}}{Hobart, Australia}{}{{Thesis: An observational study of the role of standing meanders in slowing the Antarctic Circumpolar Current and transporting heat to Antarctica.}\\{Supervisors: A/Prof. Dr. H.E. Phillips, Prof. Dr. N.L. Bindoff, Dr. S.R. Rintoul and Dr. A. Foppert}}
 
-\cventry{2014}{Master of Science in Meteorology, Physical Oceanography and Climate}{\textsc{Utrecht University}}{the Netherlands}{}{Electives: Geophysical Fluid Dynamics, Ocean Waves and Physics of Coastal Systems, Ice and Climate}
+\cventry{2014}{Master of Science in Meteorology, Physical Oceanography and Climate}{\textsc{Utrecht University}}{the Netherlands}{}{{\href{https://dspace.library.uu.nl/handle/1874/294251}{Thesis: Modelling the formation of coral cays on platform reefs}}\\{Supervisors: Prof. dr. H.E. de Swart, dr. M. van der Vegt and dr. ir. A. van Dongeren}}
 
-\cventry{2012}{Visiting student at the department of Physical Oceanography}{\textsc{Royal Netherlands Institute for Sea Research (NIOZ)}}{Texel, the Netherlands}{}{Elective: multidisciplinary sea-going oceanography course\\Project: Making, analysing and interpreting observations, "Temperature profiles along the Southern
-	Boundary of the North Sea - measurements by seals".}
+\cventry{2012}{Visiting student at the department of Physical Oceanography}{\textsc{Royal Netherlands Institute for Sea Research (NIOZ)}}{Texel, the Netherlands}{}{}
 
-\cventry{2012}{Visiting student at the department of Coastal Engineering}{\textsc{Delft University of Technology}}{the Netherlands}{}{Electives: Coastal Dynamics, Coastal Zone Management and Waterpower Engineering}
+\cventry{2012}{Visiting student at the department of Coastal Engineering}{\textsc{Delft University of Technology}}{the Netherlands}{}{}
 
-\cventry{2011}{Bachelor of Engineering in Aeronautical Engineering}{\textsc{Inholland University}}{Delft, the Netherlands}{}{Major: Technical Engineering\\Minor: Lightweight structures design and Aerospace Technology}
+\cventry{2011}{Bachelor of Engineering in Aeronautical Engineering}{\textsc{Inholland University}}{Delft, the Netherlands}{}{}
 
-\section{PhD Topic}
-%\cvitem{Title}{\emph{}}
-\cvitem{Supervisors}{Prof. dr. N.L. Bindoff, dr. S.R. Rintoul and dr. H.E. Phillips}
-\cvitem{Description}{An observational study of the role of standing meanders in slowing the Antarctic Circumpolar Current and transporting heat to Antarctica.}
+% \section{PhD Topic}
+% %\cvitem{Title}{\emph{}}
+% \cvitem{Supervisors}{A/Prof. Dr. H.E. Phillips, Prof. Dr. N.L. Bindoff, Dr. S.R. Rintoul and Dr. A. Foppert}
+% \cvitem{Description}{An observational study of the role of standing meanders in slowing the Antarctic Circumpolar Current and transporting heat to Antarctica.}
 
-\section{Masters Thesis}
-\cvitem{Title}{\emph{Modelling the formation of coral cays on platform reefs.}}
-\cvitem{Supervisors}{Prof. dr. H.E. de Swart, dr. M. van der Vegt and dr. ir. A. van Dongeren}
-\cvitem{Description}{A modelling study to investigate the effects of wave dissipation, wave-generated currents and sediment transport on the formation and positioning of coral cays on platform reefs.}
-
-\section{Summer/ winter schools}
-\cventry{2018}{Winter school in Climate Extremes and High Impact Weather}{\textsc{Australian National University}}{Canberra, Australia}{}{}
-\cventry{2011}{Summer school in Physics of the Climate System}{\textsc{Utrecht University}}{the Netherlands}{}{}
-
+% \section{Masters Thesis}
+% \cvitem{Title}{\emph{Modelling the formation of coral cays on platform reefs.}}
+% \cvitem{Supervisors}{Prof. dr. H.E. de Swart, dr. M. van der Vegt and dr. ir. A. van Dongeren}
+% \cvitem{Description}{A modelling study to investigate the effects of wave dissipation, wave-generated currents and sediment transport on the formation and positioning of coral cays on platform reefs.}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -160,15 +121,20 @@
 
 \section{Experience}
 \subsection{Research experience}
-\cventry{2015 -- 2016}{Research Associate}{\textsc{Stockholm Environment Institute (SEI)}}{Stockholm, Sweden}{\footnotesize{\url{http://www.sei-international.org}}}{A case study in which a set of coastal risk tools developed in the \href{http://www.risckit.eu}{RISC-KIT} project are applied, to assess the Kristianstad Municipality coastline in Sweden on flooding and erosion during extreme storm events.}
 
-\cventry{2013 -- 2014}{Graduate intern at the department of Sediment transport and Morphology}{\textsc{Deltares} - institute for applied research}{Delft, the Netherlands}{\footnotesize{\url{http://www.deltares.nl}}}{A research study addressing the formation of coral cays on platform reefs.}
+\cventry{2021 -- Present}{Research Assistant}{\textsc{Institute for Marine and Antarctic Studies (IMAS)}}{Hobart, Australia}{\footnotesize{\url{https://www.imas.utas.edu.au}}}{Making MATLAB scripts for quality controlling EM-APEX floats available on GitHub, applying these to the float data of the IN1810v05 voyage and formatting in easy-accessible NetCDF format.}
+
+\cventry{2019}{Guest investigator}{\textsc{Woods Hole Oceanographic Institute (WHOI)}}{Woods Hole, MA, USA}{\footnotesize{\url{https://www.whoi.edu}}}{Research collaboration with Kurt Polzin (WHOI), Kathleen Donohue, Karen Tracey, Randolph Watts (University of Rhode Island) and supervisory team on “How does topography brake the Antarctic Circumpolar Current?”}
+
+\cventry{2015 -- 2016}{Research Associate}{\textsc{Stockholm Environment Institute (SEI)}}{Stockholm, Sweden}{\footnotesize{\url{http://www.sei-international.org}}}{A case study in which a set of coastal risk tools developed in the \href{http://www.risckit.eu}{RISC-KIT} project are applied, to assess the risk to the Kristianstad Municipality coastline in Sweden on flooding and erosion during extreme storm events.}
+
+\cventry{2013 -- 2014}{Graduate intern at the department of Sediment transport and Morphology}{\textsc{Deltares}}{Delft, the Netherlands}{\footnotesize{\url{http://www.deltares.nl}}}{A research study addressing the formation of coral cays on platform reefs.}
 
 
 \subsection{Sea-going experience}
-\cventry{2018}{Scientist}{\textsc{RV Investigator}}{Polar Front meander downstream of the South East Indian Ridge}{16 October -- 16 November 2018}{Assisting in planning of CTD locations, operating CTD casts/ sampling Niskin bottles and analysing the incoming data.}
+\cventry{2018}{Principal student investigator}{\textsc{RV Investigator}}{Polar Front meander downstream of the South East Indian Ridge}{16 October -- 16 November 2018}{Assisting in the planning of CTD locations along 11 transects, operating CTD casts/ sampling Niskin bottles and analysing the incoming data. Deploying EM-APEX floats and Langrangian surface drifters.}
 
-\cventry{2015}{Scientist}{\textsc{RV Pelagia}}{Rainbow thermal field on the Mid-Atlantic Ridge near the Azores}{6 - 14 April 2015}{Assisting in recovering deep-sea moorings, controlling CTD casts during "yo-yo" and "tow-yow" surveys and a first attempt in analysing the recovered mooring datasets.}
+\cventry{2015}{Investigator}{\textsc{RV Pelagia}}{Rainbow thermal field on the Mid-Atlantic Ridge near the Azores}{6 - 14 April 2015}{Assisting in recovering deep-sea moorings, controlling CTD casts during "yo-yo" and "tow-yow" surveys and a first attempt in analysing the recovered mooring datasets.}
 
 \cventry{2008 -- 2015}{Seaman at the deck department}{\textsc{Rederij Halfland} - shipping company}{Rotterdam, the Netherlands}{\footnotesize{\url{http://www.halfland.nl}}}{Assisting steersman and captain on two and three-masted sailing ships.}
 
@@ -183,10 +149,15 @@
 
 \cventry{2007 -- 2008}{Intern at the department of Design/ Analysis and Project Management}{\textsc{FACC AG}}{Ried im Innkreis, Austria}{\footnotesize{\url{http://www.facc.at}}}{Helping in the design and analysis of composite components for the Boeing 787 Spoiler project.}
 
+\section{Summer/ winter schools}
+\cventry{2020}{Virtual winter school in Atmosphere and Ocean Dynamics}{\textsc{ARC Centre of Excellence for Climate Extremes}}{Australia}{}{}
+\cventry{2018}{Winter school in Climate Extremes and High Impact Weather}{\textsc{Australian National University}}{Canberra, Australia}{}{}
+\cventry{2011}{Summer course in Multidisciplinary sea-going oceanography}{\textsc{Royal Netherlands Institute for Sea Research (NIOZ)}}{Texel, the Netherlands}{}{}
+\cventry{2011}{Summer school in Physics of the Climate System}{\textsc{Utrecht University}}{Utrecht, the Netherlands}{}{}
+
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
-
 \section{Publications}
 \nocite{*}
 %\bibliographystyle{plain}
@@ -198,9 +169,16 @@
 %----------------------------------------------------------------------------------------
 
 \section{Conference presentations}
-\cventry{2017}{Are standing meanders braking the Antarctic Circumpolar Current?}{Quantitative Marine Science Symposium organised by \textsc{CSIRO}, the \textsc{Institute for Marine and Antarctic Studies} and the \textsc{University of Tasmania}}{Hobart. Australia}{November 20, 2017}{}
 
-\cventry{2017}{Integrated approaches to coastal risk - case study: Kristianstad Municipality, Sweden.}{\href{http://www.risckit.eu}{RISC-KIT} Final Conference organised by the \href{http://www.risckit.eu}{RISC-KIT} Consortium and hosted at \textsc{Deltares}}{Delft, the Netherlands}{April 5-7, 2017}{}
+\cventry{2022 (accepted)}{Dynamics of a standing meander of the Subantarctic Front diagnosed from satellite altimetry and along-stream anomalies of temperature and salinity}{International Conference on Southern Hemisphere Meteorology and Oceanography (ICSHMO)}{Christchurch, New Zealand}{February 8-12, 2022}{}
+
+\cventry{2019}{Sustainability in ocean observations}{OceanObs}{Honolulu, HI, USA}{September 16-20, 2019}{}
+
+\cventry{2019}{Three-dimensional structure of a standing meander in the Antarctic Circumpolar Current}{EGU General Assembly}{Vienna, Austria}{April 7-12, 2019}{}
+
+\cventry{2018}{Are standing meanders braking the Antarctic Circumpolar Current?}{Annual Graduate Research Conference organised by the \textsc{University of Tasmania}}{Hobart, Australia}{September 07, 2018}{}
+
+\cventry{2017}{Integrated approaches to coastal risk - case study: Kristianstad Municipality, Sweden.}{Final Conference organised by the \href{http://www.risckit.eu}{RISC-KIT} Consortium and hosted at \textsc{Deltares}}{Delft, the Netherlands}{April 5-7, 2017}{}
 
 \cventry{2016}{From storm hazards at the coast, to impacts on the hinterland - \href{http://www.risckit.eu}{RISC-KIT} project}{Climate Change Adaptation in the Coastal Zone conference organised by \textsc{F\"{o}reningen Vatten} (Swedish Association for Water) in cooperation with the \textsc{Lund University} and the \textsc{World Maritime University}}{Malm\"{o}, Sweden}{April 5-6, 2016}{}
 
@@ -208,8 +186,10 @@
 %	AWARDS AMD GRANTS
 %----------------------------------------------------------------------------------------
 
-\section{Awards and grants}
-\cventry{2018}{Travel support}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{AUD\$1,000}{}
+\section{Grants}
+\cventry{2019}{Travel support for OceanObs'19}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{AUD\$3,000}{}
+\cventry{2018}{Travel support for research visit to WHOI/ University of Rhode Island}{\textsc{ARC Discovery Grant (DP170102162-Bindoff)}}{Australia}{AUD\$4,000}{}
+\cventry{2018}{Travel support for research visit to WHOI}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{AUD\$1,000}{}
 \cventry{2018}{Quantitative Marine Science postgraduate conference support}{\textsc{CSIRO} and \textsc{University of Tasmania}}{Hobart, Australia}{AUD\$2,500}{}
 \cventry{2017}{Quantitative Marine Science Scholarship}{\textsc{CSIRO} and \textsc{University of Tasmania}}{Hobart, Australia}{top-up of AUD\$5,000pa for three years with a possible six month extension}{}
 \cventry{2017}{Tasmania Graduate Research Scholarship}{\textsc{University of Tasmania}}{Hobart, Australia}{living allowance of AUD\$26,682pa for three years with a possible six month extension}{}
@@ -235,26 +215,34 @@
 
 \subsection{Communication}
 \cvitem{Reading}{Proficient in reading technical manuals and scientific papers}
-\cvitem{Writing}{Proficient in writing technical and scientific reports}
+\cvitem{Writing}{Proficient in writing technical manuals and scientific papers}
 \cvitem{Presenting}{Confident in public speaking and work floor discussions}
+\cvitem{Outreach}{STEM\_next at Taroona High School (2019), Roving Scientist on Beaker Street at the Tasmanian Museum and Art Gallery (2019), IN1810v05 Voyage blog post (2018)}
 
 \subsection{Leadership/ teamwork}
-\cventry{2018 -- Presemt}{Student representative for the Earth Systems Science Compute User Group}{\textsc{University of Tasmania}}{Hobart, Australia}{}{}
-\cventry{2018 -- Present}{Member of the Early Career Researcher committee}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{\footnotesize{\url{https://climateextremes.org.au}}}{}
+\cventry{2019 -- 2020}{Chair of the Early Career Researcher committee}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{\footnotesize{\url{https://climateextremes.org.au}}}{}
+\cventry{2018 -- 2020}{Member of the Early Career Researcher committee}{\textsc{Centre of Excellence for Climate Extremes}}{Australia}{\footnotesize{\url{https://climateextremes.org.au}}}{}
+\cventry{2019}{Co-organiser of CSIRO-IMAS ECR-day}{\textsc{CSIRO} and \textsc{IMAS}}{Hobart, Australia}{}{}
+\cventry{2018}{Student representative for the Earth Systems Science Compute User Group}{\textsc{University of Tasmania}}{Hobart, Australia}{}{}
+
+% \subsection{Computation/ numeracy}
 
 \subsection{Information technology}
-\cvcomputer{Operating systems}{Windows, Mac OSX, Linux Mint}
-\cvcomputer{Programming languages}{Python, Fortran, HTML}
-\cvcomputer{Productivity software}{Microsof Office suite, LaTeX}
+\cvcomputer{Operating systems}{Linux (preferred), ability to work cross-platform}
+\cvcomputer{Programming languages}{Python, shell scripting, Matlab, Fortran, HTML/CSS}
+\cvcomputer{Productivity software}{LibreOffice, LaTeX, Microsoft Office suite}
+\cvcomputer{High-performance/ cloud computing}{NCI High Performance Computing system, Deltares Cluster Computing System, SEI work station}
+\cvcomputer{Open-source tools and documentation}{Conda, Git, Markdown, readthedocs.io}
 \cvcomputer{Engineering design packages}{CATIA, Patran/ Nastran, Matlab/ Simulink}
 \cvcomputer{Modelling software}{XBeach, Delft3D, LISFLOOD}
 \cvcomputer{Geographic information system}{QGIS}
 
-%\subsection{Licences/ Certificates}
-%\cvitemwithcomment{Date of expiry: \newline 3 March 2056}{International certificate for operators of pleasure craft}{Inland/ Coastal waters}
-%\cvitemwithcomment{26 March 2020}{Survival at Sea certificate}{}
-%\cvitemwithcomment{3 March 2017}{Seafarer medical certificate}{Worldwide}
-%\cvitemwithcomment{30 January 2019}{Car and motorcycle driving license}{category A and B}
+\subsection{Licences/ Certificates}
+\cvitemwithcomment{Date of expiry: \newline 3 March 2056}{International certificate for operators of pleasure craft}{Inland/ Coastal waters}
+\cvitemwithcomment{}{Long Range Operators Certificate of Proficiency}{}
+\cvitemwithcomment{26 March 2020}{Survival at Sea certificate}{}
+\cvitemwithcomment{3 March 2017}{Seafarer medical certificate}{Worldwide}
+\cvitemwithcomment{30 January 2019}{Car and motorcycle driving license}{category A and B}
 
 %----------------------------------------------------------------------------------------
 %	MEMBERSHIPS
@@ -283,15 +271,29 @@
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Other interests}
-\cvlistdoubleitem{Surfing}{Motorcycling}
-\cvlistdoubleitem{Sailing}{Restoring an English classic sports car}
-\cvlistitem{Travelling (South America (6 months in 2014), Panama, Costa Rica, Brazil, Indonesia, Fuerteventura and Europe)}
+% \section{Other interests}
+% \cvlistdoubleitem{Surfing}{Motorcycling}
+% \cvlistdoubleitem{Sailing}{Restoring an English classic sports car}
+% \cvlistitem{Travelling (South America (6 months in 2014), Panama, Costa Rica, Brazil, Indonesia, Fuerteventura and Europe)}
 %\cvlistdoubleitem{Snowboarding}{Capoeira}
 %\cvlistdoubleitem{Speed skating}{Scuba diving}
 
 
 \section{References}
+% \subsection{\normalfont{Available upon request}}
+
+\begin{cvcolumns}
+	\cvcolumn{}{%
+		\cvreference{A/Prof. Dr. H.E. Phillips}{Associate Professor}{Institute for Marine and Antarctic Studies/ University of Tasmania}{}{}{}{h.e.phillips@utas.edu.au}{}{\href{tel:0061362262994}{+61 3 6226 2994}}\\
+	}
+	\cvcolumn{}{%
+		\cvreference{Prof. Dr. N.L. Bindoff}{Australian Antarctic Program Partnership - Program Leader/ Professor}{Institute for Marine and Antarctic Studies/ University of Tasmania}{}{}{}{n.bindoff@utas.edu.au}{}{\href{tel:0061362262986}{+61 3 6226 2986}}\\
+	}
+	\cvcolumn{}{%
+		\cvreference{Dr. S.R. Rintoul}{CSIRO Fellow and Research Team Leader}{CSIRO Oceans and Atmosphere}{}{}{}{steve.rintoul@csiro.au}{}{\href{tel:0061362325393}{+61 3 6232 5393}}\\
+	}
+\end{cvcolumns}
+
 %\begin{cvcolumns}
 %	\cvcolumn{}{%
 %		\cvreference{Dr. K. Barquet}{Research Fellow\\}{Stockholm Environment Institute}{}{}{}{karina.barquet@sei-international.org}{}{\href{tel:0046703885690}{+46 (0)70 388 5690}}\\
@@ -302,7 +304,6 @@
 %	}
 %\end{cvcolumns}
 
-\subsection{\normalfont{Available upon request}}
 
 %\begin{cvcolumns}
 %	\cvcolumn{}{%
