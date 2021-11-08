@@ -191,7 +191,10 @@
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
 
-\RequirePackage{l3regex}
+% \RequirePackage{l3regex}
+% workaround for l3regex (https://tex.stackexchange.com/questions/479650/l3regex-sty-not-found)
+\usepackage{expl3}
+\expandafter\def\csname ver@l3regex.sty\endcsname{}
 
 %-------------------------------------------------------------------------------
 %                class definition
