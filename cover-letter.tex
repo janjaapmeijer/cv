@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+
+\usepackage{kantlipsum}   %% only for demo
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Jan Jaap}
+\def\familyname{Meijer}
+\def\FileAuthor{\firstname{ }\familyname}
+\def\FileTitle{cover-letter\_\firstname\_\familyname}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries \FileAuthor}\\[.35ex]
+\small\itshape%
+% street and number\\
+% postcode city\\[.35ex]
+\Telefon~\href{tel:0061435503003}{0435 503 003}\\
+\Letter~\href{mailto:janjaap.meijer@utas.edu.au}{janjaap.meijer@utas.edu.au}
+\end{minipage}\\[1em]
+%
+% \begin{minipage}[t]{.4\textwidth}
+% \raggedright%
+% {\bfseries Company XYZ}\\[.35ex]
+% \small\itshape%
+% street and number\\
+% postcode city
+% \end{minipage}
+% \hfill % US style
+\\[1em] % UK style
+% \begin{minipage}[t]{.4\textwidth}
+% \raggedleft % US style
+% \today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+% \end{minipage}\\[2em]
+\raggedright
+Dear Dr. Petra Heil,\\[1.5em]
+%
+
+I write to apply for the Sea-Ice Data Analyst position (ref. 2021/4025). This position brings  together an interesting combination of science, observations and data analysis from a remote and challenging environment that is worth understanding and protecting. Moreover, the Australian Antarctic Divisions’s role to provide scientific and research advice to the government, brings science into action.  All this describes what I really value and appreciate in a job.
+
+Fluid dynamics have been an integral part of my studies, from aerodynamics to geophysical fluid dynamics and with a side-track to geomorphology on coasts and beaches, back to the deep ocean. I think the next challenge for me, is the understanding of (sea-)ice dynamics and its interaction with ocean circulation. As outlined in the selection criteria document and my Curriculum Vitae, I believe, that I possess the skills and experience needed for this position. The ability to work with both numerical simulations and observational (in-situ and satellite) datasets from the Earth Climate system, plus the numeracy and programming skills I have obtained will lead to new understanding in sea-ice dynamics.
+
+Although not part of the selection criteria, I’d like to add my interest in sea-going research and my ability to work in isolated and confined environments. I have done two scientific ocean voyages, one 10-day voyage around the Azores on the RV Pelagia in 2015 and one 31-day voyage to the southern ocean (about 57°S) on the RV Investigator in 2018. Furthermore, I was selected for the Ends of the Earth Challenge this year, to sail in a 50ft sailing boat from New Zealand to Ushuaia, Argentina and do a scientific experiment along the way in the Antarctic Circumpolar Current. Unfortunately, this got cancelled due to COVID-restrictions.
+
+Another activity that shows my ability to work in remote places without comfort, was this year’s 10-day trip going down the Franklin River rafting in the middle of the Tasmanian Wilderness. Here, I learned a lot about team effort (helping the guides portaging the rafts), that is needed in harsh circumstances along with the personal challenges that you need to overcome when dealing with discomforts.
+
+Although I am not an Australian citizen, I sincerely hope you will consider my application, because in the 4 years I have lived in Australia, I have truly appreciated the culture, the community and the values here. I am planning on submitting my PhD thesis on February 22, 2022, hereafter I will be eligible for a temporary graduate visa (485), which can extend my stay up to 4 years.
+
+I am looking forward to hearing from you.\\[1.5em]
+
+Yours sincerely,\\[3em] % if the opening is "Dear Mr(s) Doe,"
+% Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries \FileAuthor}\\
+%
+% \vfill%
+% {\slshape Enclosure}
+% {\slshape Attachment: curriculum vit\ae{}}
+\end{document}
