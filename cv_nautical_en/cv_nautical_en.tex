@@ -1,0 +1,188 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+% \documentclass{../templates/ams-v6-1/ametsocV6.1}
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvicons{awesome}
+\moderncvcolor{blue}
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{4cm}
+
+%\usepackage{filecontents}
+%\begin{filecontents}{\jobname.bib}
+%	@article{A01,
+%		author = {Author, A.},
+%		journal = {Good Journal},
+%		year = {2001},
+%		title = {Alpha},
+%	}
+%\end{filecontents}
+
+% Widen the quote section
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+	\originalrecomputecvlengths%
+	\setlength{\quotewidth}{0.85\textwidth}}
+
+% Reformat cvcomputer entry
+%\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+
+% Format references with icons
+\newcommand{\cvreference}[9]{%
+	\textbf{#1}\newline% Name
+	\ifthenelse{\equal{#2}{}}{}{#2\newline}% Function
+	\ifthenelse{\equal{#3}{}}{}{#3\newline}% Institute
+	\ifthenelse{\equal{#4}{}}{}{\addresssymbol~#4\newline}%
+	\ifthenelse{\equal{#5}{}}{}{#5\newline}%
+	\ifthenelse{\equal{#6}{}}{}{#6\newline}%
+	\ifthenelse{\equal{#7}{}}{}{\emailsymbol~\texttt{\href{mailto:#7}{\nolinkurl{#7}}}\newline}%
+	\ifthenelse{\equal{#8}{}}{}{\phonesymbol~#8\newline}
+	\ifthenelse{\equal{#9}{}}{}{\mobilephonesymbol~#9}}
+
+
+% single colum cvcomputer
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+% personal data
+\name{Jan Jaap}{Meijer}
+%\title{Curriculum Vitae}
+%\address{135 Waterworks Rd}{Dynnyrne TAS 7005}{Australia}
+%\address{Prinses Beatrixstraat 19}{7271 GG Borculo}{the Netherlands}
+\phone[mobile]{\href{tel:0061435503003}{+61 435 503 003}}
+%\phone[mobile]{\href{tel:0031641709565}{+31 6 417 09 565}}
+\email{janjaapmeijer@gmail.com}
+\homepage{www.atsea.science}
+\social[linkedin]{janjaapmeijer}
+\social[twitter]{janjaapatsea}
+%\extrainfo{\skypesocialsymbol \href{skype:meijerjanjaap?call}{meijerjanjaap}} %
+\photo[64pt][0.4pt]{pictures/photo}
+\quote{\raggedright{I am an enthusiastic and motivated observational oceanographer who is deeply connected to the ocean not only via my degrees in atmospheric and oceanic sciences, but also via my personal interests in surfing and sailing. During my degrees I successfully combined my studies with internships and part time jobs, journeys and other commitments showing myself to be self-motivated, organised and being able to work with others. I have a clear, open mind and use my communication and numeracy skills to solve societal and environmental problems for a sustainable future.}}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{articles,book,misc}{{Books},{Others}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL DATA
+%----------------------------------------------------------------------------------------
+
+%\section{Personal Data}
+%\cvitem{Date of birth}{3 March 1986}
+%\cvitem{Place of birth}{Winterswijk, the Netherlands}
+%\cvitem{Nationality}{Dutch}
+%\cvitem{Marital status}{Single}
+%\cvitem{Sex}{Male}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2017 -- 2022}{PhD in Quantitative Marine Science}{\textsc{University of Tasmania}}{Hobart, Australia}{}{}
+
+\cventry{2014}{Master of Science in Meteorology, Physical Oceanography and Climate}{\textsc{Utrecht University}}{the Netherlands}{}{}
+
+\cventry{2011}{Bachelor of Engineering in Aeronautical Engineering}{\textsc{Inholland University}}{Delft, the Netherlands}{}{}
+
+%\section{PhD Topic}
+%%\cvitem{Title}{\emph{}}
+%\cvitem{Supervisors}{Prof. dr. N.L. Bindoff, dr. S.R. Rintoul and dr. H.E. Phillips}
+%\cvitem{Description}{An observational study of the role of standing meanders in slowing the Antarctic Circumpolar Current and transporting heat to Antarctica.}
+%
+%\section{Masters Thesis}
+%\cvitem{Title}{\emph{Modelling the formation of coral cays on platform reefs.}}
+%\cvitem{Supervisors}{Prof. dr. H.E. de Swart, dr. M. van der Vegt and dr. ir. A. van Dongeren}
+%\cvitem{Description}{A modelling study to investigate the effects of wave dissipation, wave-generated currents and sediment transport on the formation and positioning of coral cays on platform reefs.}
+
+%\section{Summer/ winter schools}
+%\cventry{2018}{Winter school in Climate Extremes and High Impact Weather}{\textsc{Australian National University}}{Canberra, Australia}{}{}
+%\cventry{2011}{Summer school in Physics of the Climate System}{\textsc{Utrecht University}}{the Netherlands}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Research experience}
+\cventry{2021}{Research Assistant}{\textsc{Institute for Marine and Antarctic Studies (IMAS)}}{Hobart, Australia}{\footnotesize{\url{https://www.imas.utas.edu.au}}}{Developing a toolbox for the quality control and data analysis of EM-APEX floats (autonomous oceanographic instrument for measurements of temperature, salinity and velocity in the water column).}
+
+\cventry{2015 -- 2016}{Research Associate}{\textsc{Stockholm Environment Institute (SEI)}}{Stockholm, Sweden}{\footnotesize{\url{http://www.sei-international.org}}}{A case study in which a set of coastal risk tools developed in the \href{http://www.risckit.eu}{RISC-KIT} project are used in assessing the risk to the Kristianstad Municipality coastline in Sweden for flooding and erosion during extreme storm events.}
+
+\cventry{2013 -- 2014}{Graduate intern at the department of Sediment transport and Morphology}{\textsc{Deltares}}{Delft, the Netherlands}{\footnotesize{\url{http://www.deltares.nl}}}{A research study addressing the formation of coral cays on platform reefs.}
+
+\subsection{Sea-going experience}
+\cventry{2018}{Principal student investigator}{\textsc{RV Investigator}}{Polar Front meander downstream of the South East Indian Ridge}{16 October -- 16 November 2018}{Assisting in the planning of CTD locations along 11 transects, operating CTD casts/ sampling Niskin bottles and analysing the incoming data. Deploying EM-APEX floats and Langrangian surface drifters.}
+
+\cventry{2015}{Investigator}{\textsc{RV Pelagia}}{Rainbow thermal field on the Mid-Atlantic Ridge near the Azores}{6 - 14 April 2015}{Assisting in recovering deep-sea moorings, controlling CTD casts during "yo-yo" and "tow-yow" surveys and a first attempt in analysing the recovered mooring datasets.}
+
+\cventry{2008 -- 2015}{Seaman at the deck department}{\textsc{Rederij Halfland} - shipping company}{Rotterdam, the Netherlands}{\footnotesize{\url{http://www.halfland.nl}}}{Assisting steersman and captain on two (\textsc{SV Rosa van Delft}) and three-masted (\textsc{SV Amazone}) sailing ships, and instructing the guests with setting the sails.}
+
+\subsection{Teaching experience}
+\cventry{2017}{Teacher in Physics}{\textsc{Lyceo}}{Leiden, the Netherlands}{\footnotesize{\url{http://www.lyceo.nl}}}{Giving instruction and additional attention to secondary school students.}
+
+\cventry{2015}{Teacher in Physics and Mathematics}{\textsc{Lyceo/ Inwijs}}{Leiden, the Netherlands}{\footnotesize{\url{http://www.lyceo.nl}} / \footnotesize{\url{http://www.inwijs.nl}}}{Giving instruction and additional attention to secondary school students.}
+
+\subsection{Engineering experience}
+\cventry{2011}{Undergraduate intern at the department of Research and Development}{\textsc{CTC GmbH} subsidiary of \textsc{Airbus Deutschland GmbH}}{Stade, Germany}{\footnotesize{\url{http://www.ctc-gmbh.com}}}{Developing processes for "Out of Autoclave" rework on the Airbus A350-1000 Fuselage, made primarily of carbon fibre reinforced plastic.}
+
+\cventry{2003 -- 2011}{Fieldworker/ welder}{\textsc{Frontmatec} (formerly named \textsc{Nawi BV})}{Borculo, the Netherlands}{\footnotesize{\url{https://www.frontmatec.com}}}{Welding and assembling of steel structures in the food-industry.}
+
+\cventry{2007 -- 2008}{Intern at the department of Design/ Analysis and Project Management}{\textsc{FACC AG}}{Ried im Innkreis, Austria}{\footnotesize{\url{http://www.facc.at}}}{Assisting in the design and analysis of composite components for the Boeing 787 Spoiler project.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+\cvlanguage{Dutch}{Native language}{}
+\cvlanguage{English}{Fluent}{speaking and writing}
+\cvlanguage{German}{Intermediate}{speaking and writing}
+\cvlanguage{French}{Basic knowledge}{speaking and writing}
+\cvlanguage{Portuguese}{Basic knowledge}{speaking}
+\cvlanguage{Spanish}{Basic knowledge}{speaking}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS/ ABILITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills/ Abilities}
+
+\subsection{Communication}
+\cvitem{}{I regularly and confidently present climate science at national and international conferences, stakeholder meetings, in schools, events and on social media. Furthermore, my research is published in highly ranked scientific journals.}
+
+\subsection{Leadership}
+\cvitem{}{I have been a member and chair of the Early Career Researcher (ECR) committee for the Centre of Excellence for Climate Extremes and I have organised several ECR events for over 80 people. I have been a participant in the Ocean Impact Ideation Program that is focused on ocean entrepreneurship that gives guidance on setting up a start-up.}
+
+\subsection{Teamwork}
+\cvitem{}{I have worked effectively in small teams and larger collaborations with a combination of different disciplines, e.g. engineers, natural and social scientists, city planners and the local community. In a research setting, I play a bridging role between observationalists, modellers and theoreticians and I foster sharing knowledge with students or the broader public.}
+
+\subsection{Licences/ Certificates}
+\cvitemwithcomment{Date of expiry: \newline 3 March 2056}{International certificate for operators of pleasure craft}{Inland/ Coastal waters}
+\cvitemwithcomment{}{Long Range Operators Certificate of Proficiency (LROCP)}{}
+\cvitemwithcomment{10 August 2023}{Car and motorcycle driving license}{category C and R}
+\cvitemwithcomment{26 March 2020}{Survival at Sea certificate}{}
+\cvitemwithcomment{3 March 2017}{Seafarer medical certificate}{Worldwide}
+
+
+\end{document}
